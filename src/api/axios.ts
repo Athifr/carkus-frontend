@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://carkus-backend-main.up.railway.app",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
 });
